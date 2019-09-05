@@ -4,12 +4,11 @@ import { useState } from "react";
 import ButtonDisplay from "./ButtonDisplay";
 
 const Dashboard = () => {
-  const [count, setCount] = useState(0);
   return (
     <div className="dashboard">
       <h1>React Baseball!</h1>
-      <Display count={count} name="Strikes" />
-      <Display count={count} name="Balls" />
+      <Display name="Strikes" limit="2" />
+      <Display name="Balls" limit="3" />
       <ButtonDisplay />
     </div>
   );

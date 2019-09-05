@@ -4,7 +4,12 @@
 
 .button-display {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
+}
+
+.counter-buttons {
+  display: flex;
 }
 
 button {
