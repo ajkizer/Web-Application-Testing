@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.button-display {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.counter-buttons {
+  display: flex;
+}
+
+button {
+  margin: 0 50px;
+  width: 100px;
+}
