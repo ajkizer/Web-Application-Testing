@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Display = props => {
-  const [count, setCount] = useState(0);
-
-  useEffect;
   return (
     <div>
-      <h3>{props.name}</h3>
-      <h3>{count}</h3>
+      <h2 data-testid="ball-value">Balls: {props.balls}</h2>
+      <h2 data-testid="strike-value">Strikes: {props.strikes}</h2>
     </div>
   );
 };
