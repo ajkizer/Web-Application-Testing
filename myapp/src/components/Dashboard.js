@@ -1,15 +1,21 @@
 import React from "react";
-import Display from "./Display";
-import { useState } from "react";
-import ButtonDisplay from "./ButtonDisplay";
 
-const Dashboard = () => {
+const Dashboard = props => {
   return (
     <div className="dashboard">
       <h1>React Baseball!</h1>
-      <Display name="Strikes" limit="2" />
-      <Display name="Balls" limit="3" />
-      <ButtonDisplay />
+      <button data-testid="ball-btn" onClick={props.ballsHandler}>
+        Ball
+      </button>
+      <button data-testid="hit-btn" onClick={props.hitHandler}>
+        Hit
+      </button>
+      <button data-testid="strike-btn" onClick={props.strikesHandler}>
+        Strike
+      </button>
+      <button data-testid="foul-btn" onClick={props.foulHandler}>
+        Foul
+      </button>
     </div>
   );
 };
